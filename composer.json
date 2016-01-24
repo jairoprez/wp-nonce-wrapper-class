@@ -1,0 +1,24 @@
+{
+    "name": "perezlabs/wp-nonce-wrapper-class",
+    "description": "A package that provides the functionality of working with WordPress Nonces in an object orientated way.",
+    "keywords": [
+        "WordPress",
+        "Nonces"
+    ],
+    "authors": [
+        {
+            "name": "Jairo Pérez",
+            "email": "info@perezlabs.com",
+            "homepage": "http://perezlabs.com",
+            "role": "Web Developer"
+        }
+    ],
+    "require": {
+        "php": ">=5.3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "WpNonceWrapper\\": "src/WpNonceWrapper"
+        }
+    }
+}
