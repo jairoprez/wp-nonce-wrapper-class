@@ -1,5 +1,5 @@
 <?php
-namespace WpNonceWrapper;
+namespace Perezlabs\WpNonceWrapper;
 
 class WpNonceWrapper
 {
