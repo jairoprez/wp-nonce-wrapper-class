@@ -32,3 +32,57 @@ composer require perezlabs/wp-nonce-wrapper-class
 4. Happy coding :)!
 
 ## Usage
+
+Setup the minimum required thigs:
+
+```php
+<?php
+use Perezlabs\WpNonceWrapper\WpNonceWrapper;
+
+// Instantiate the class
+$nonce = new WpNonceWrapper();
+```
+### Examples
+
+Adding a nonce to a URL:
+
+```php
+<?php
+$complete_url = $nonce->wpNonceUrl( $bare_url, 'trash-post_'.$post->ID );
+```
+
+Adding a nonce to a form:
+
+```php
+<?php
+$nonce->wpNonceField( 'delete-comment_'.$comment_id );
+```
+
+Creating a nonce:
+
+```php
+<?php
+$newNonce = $nonce->wpCreateNonce( 'my-action_'.$post->ID );
+```
+
+Verifying a nonce:
+
+```php
+<?php
+$nonce->checkAdminReferer( 'delete-comment_'.$comment_id );
+```
+
+Verifying a nonce passed in an AJAX request:
+
+```php
+<?php
+$nonce->checkAjaxReferer( 'process-comment' );
+```
+
+Verifying a nonce passed in some other context:
+
+```php
+<?php
+$nonce->wpVerifyNonce( $_REQUEST['my_nonce'], 'process-comment'.$comment_id );
+```
+
