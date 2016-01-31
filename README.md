@@ -21,7 +21,7 @@ You can install this class via command-line or drag it into the root of your plu
 Using [Composer](https://getcomposer.org/), add Nonce Wrapper Class to your plugin's dependencies.
 
 ```sh
-composer require perezlabs/wp-nonce-wrapper-class
+composer require perezlabs/wp-nonce-wrapper-class:dev-master
 ```
 
 ### Another way
