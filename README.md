@@ -37,6 +37,8 @@ Setup the minimum required thigs:
 
 ```php
 <?php
+require_once 'vendor/autoload.php';
+
 use Perezlabs\WpNonceWrapper\WpNonceWrapper;
 
 // Instantiate the class
